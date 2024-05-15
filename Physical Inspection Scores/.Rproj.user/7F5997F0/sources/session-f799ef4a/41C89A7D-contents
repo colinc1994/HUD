@@ -28,4 +28,4 @@ print(x)
   do.call(rbind,.)
 
 # save this dataframe
-save("Data/Cleaned Data/inspection_scores_df.RData")
+save(inspection_scores_df,file = "Data/Cleaned Data/inspection_scores_df.RData")
