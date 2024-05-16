@@ -1,0 +1,26 @@
+{
+    "id": "C4DA8D00",
+    "path": "~/GitHub/HUD/Physical Inspection Scores/R Scripts/P02 - Add Geographical Variables.R",
+    "project_path": "R Scripts/P02 - Add Geographical Variables.R",
+    "type": "r_source",
+    "hash": "859175093",
+    "contents": "",
+    "dirty": false,
+    "created": 1715894995571.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "56,30",
+        "scrollLine": "40"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1715895019,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1715895019458,
+    "read_only": false,
+    "read_only_alternatives": []
+}
