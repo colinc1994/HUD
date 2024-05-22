@@ -1,0 +1,48 @@
+---
+title: "Flatiron Health"
+format: html
+editor: visual
+toc:true
+---
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE}
+# Run everything from this script to get the tables and figures and print them out on this markdown script
+library(tidyverse)
+library(ggplot2)
+library(gtsummary)
+library(survival)
+library(survminer)
+load("FHTest.RData")
+```
+
+## Distribution of Cancer Diagnoses
+
+Among all the diagnoses, the majority were breast cancer. Since there were multiple diagnoses for some patients, we can also examine the first recorded diagnosis. Almost three-quarters of the patients' first diagnoses were breast cancer.
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE}
+tbl1
+```
+
+# Timing of Treatments from First Diagnosis
+
+The median time from first diagnosis to first treatment was five days with a mean of almost twelve, showing a skew in the data. Two patients were excluded due to having negative times recorded.
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE}
+tbl2
+```
+
+# Analysis of Treatment Methods
+
+Using Fisher's Exact Test, a significant difference was seen in the uptake between the first diagnoses and their first treatment. A majority of the patients who were first diagnosed with breast cancer had treatments A and B. It seems likely that treatments A and B were more associated with breast cancer patients. There is some evidence to show that treatment C and D are associated with the regiment of colon cancer patients.
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE}
+tbl3
+```
+
+# Analysis of Timing Between First Treatment and First Diagnosis for Drugs A and B
+
+Using standard survival analysis methods, we can use a Kaplan-Meier curve to examine the incidence rate of treatments A and B, limiting it to 100 days. To test for significant differences in the median time, the Log-Rank test can be used to show a high p-value, suggesting that there are no differences in the time between first diagnosis and first treatment concerning A and B.
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE}
+fig1
+```

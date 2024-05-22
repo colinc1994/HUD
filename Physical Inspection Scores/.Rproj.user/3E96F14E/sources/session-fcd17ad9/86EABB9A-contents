@@ -1,0 +1,23 @@
+library(tidyverse)
+library(ggplot2)
+
+#Data analysis questions
+# 1. First, the clinic would like to know the distribution of cancer types across their patients.
+# Please provide the clinic with this information. Note that patients can be diagnosed with
+# more than one cancer.
+
+
+# 2. The clinic wants to know how long it takes for patients to start therapy after being
+# diagnosed, which they consider to be helpful in understanding the quality of care for the
+# patient. How long after being diagnosed do patients start treatment?
+  
+
+# 3. Which treatment regimens [i.e., drug(s)] do you think would be indicated to be used as
+# first-line of treatment for breast cancer? What about colon cancer? (For more information
+#                                                                     on first-line and second-line treatments, click here. Additionally, note that some patients
+#                                                                      may receive more than one drug as part of their first-line treatment, i.e., combination
+#                                                                      therapy)
+
+# 4. Do the patients taking Drug A monotherapy vs. Drug B monotherapy as first-line therapy
+# for breast cancer vary in terms of duration of therapy? Please include statistical tests and
+# visualizations, as appropriate

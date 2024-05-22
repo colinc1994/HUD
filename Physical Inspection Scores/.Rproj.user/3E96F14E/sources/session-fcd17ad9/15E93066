@@ -1,0 +1,27 @@
+{
+    "id": "15E93066",
+    "path": "~/GitHub/HUD/Physical Inspection Scores/R Scripts/P04 - CBSA SHI Read In.R",
+    "project_path": "R Scripts/P04 - CBSA SHI Read In.R",
+    "type": "r_source",
+    "hash": "2673130870",
+    "contents": "",
+    "dirty": false,
+    "created": 1715956989291.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "105,0",
+        "scrollLine": "85"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1716382110,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1716382110262,
+    "read_only": false,
+    "read_only_alternatives": []
+}
