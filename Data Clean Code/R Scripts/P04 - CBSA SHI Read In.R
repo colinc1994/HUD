@@ -19,8 +19,12 @@ cbsa_shi_list = lapply(list.files("../Data/Raw Data/CBSA SHI/"),function(x){
 
 # get columns that should be the same between all of them and put into a df
 cbsa_shi_df = lapply(cbsa_shi_list,function(x){
+  
+  # make these conform
+  colnames(x)[grepl("cbsa|CBSA",colnames(x))] = "CBSA"
+  
   x %>% 
-    select(year,Quarter,gsl,states,code,entities,          
+    select(year,Quarter,gsl,states,CBSA,code,entities,          
            sumlevel,program_label,program,              
            sub_program,name,        
            total_units,pct_occupied,number_reported,
@@ -42,9 +46,8 @@ cbsa_shi_df = lapply(cbsa_shi_list,function(x){
            fedhse,place,latitude,longitude,state,pha_total_units,      
            ha_size)}) %>% 
   do.call(rbind,.)
-# remove where we are missing a CBSA code
-cbsa_shi_df = cbsa_shi_df %>% 
-  filter(!is.na(code))
+# remove duplicated rows if any
+cbsa_shi_df = distinct(cbsa_shi_df)
 
 # fix state variable
 cbsa_shi_df$entities %>% unique()
