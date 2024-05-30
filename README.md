@@ -18,5 +18,6 @@ Core-Based Statistical Areas (CBSAs) are crucial for a wide range of analyses du
 
 # Sources
 
-[1] https://carolinatracker.unc.edu/stories/2020/10/28/cbsa_geography/
+[1] https://carolinatracker.unc.edu/stories/2020/10/28/cbsa_geography/ 
+
 [2] https://en.wikipedia.org/wiki/Core-based_statistical_area
